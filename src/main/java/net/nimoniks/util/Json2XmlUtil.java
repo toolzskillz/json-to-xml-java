@@ -1,5 +1,5 @@
 
-package com.systemspecs.util;
+package net.nimoniks.util;
 
 import java.io.InputStream;
 import java.text.DecimalFormat;

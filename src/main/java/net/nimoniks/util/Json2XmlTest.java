@@ -1,4 +1,4 @@
-package com.systemspecs.util;
+package net.nimoniks.util;
 
 import java.io.IOException;
 
