@@ -13,10 +13,10 @@ public class Json2XmlUtil {
 	private static String pattern = "#.00"; //To 2 decimal places
 	private static DecimalFormat decimalFormat = new DecimalFormat(pattern);
 
-	public static String convert(String anyString) {
+	public static String convert(String anyJsonString) {
 		String xml = null;
 		try {
-			JSONObject json = new JSONObject(anyString.toString());
+			JSONObject json = new JSONObject(anyJsonString.toString());
 			formatDecimals(json);
 			xml = XML.toString(json, "root"); //Set root tag
 		} catch (Exception e) {
